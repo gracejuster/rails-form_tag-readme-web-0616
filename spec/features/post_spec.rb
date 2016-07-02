@@ -6,10 +6,13 @@ describe 'new post' do
     expect(page.status_code).to eq(200)
   end
 
+  
+describe 'new post' do
   it 'has the form render with the new action' do
     visit new_post_path
     expect(page).to have_content("Post Form")
   end
+end
 
   it 'shows a new form that submits content and redirects to new page and prints out params' do
     visit new_post_path
